@@ -27,5 +27,9 @@
     "ts-node": "^10.9.1",
     "tsc-watch": "^6.0.0",
     "typedoc": "^0.23.26"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
   }
 }
