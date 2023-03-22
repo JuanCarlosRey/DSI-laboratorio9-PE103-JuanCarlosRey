@@ -10,18 +10,17 @@ on:
     branches: [ "main" ]
 
 jobs:
-  coveralls:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
     - name: Cloning repo
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
     - name: Use Node.js 19.x
       uses: actions/setup-node@v3
       with:
-        node-version: Use Node.js 19.x
-        cache: 'npm'
+        node-version: 19.x
     - name: Installing dependencies
       run: npm i
     - name: Generating coverage information
@@ -30,3 +29,4 @@ jobs:
       uses: coverallsapp/github-action@v2
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+        
