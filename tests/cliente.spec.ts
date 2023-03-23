@@ -10,6 +10,11 @@ describe('Client code', () => {
     it('Suscribing to the magazine', () => {
         revista.subscribe(suscriptor_1);
         revista.subscribe(suscriptor_2);
+        try {
+            revista.subscribe(suscriptor_1);
+        } catch (error) {
+            console.log('Suscriber 1 was already subscribed.');
+        }
     });
 
     it('Getting the update and print in console', () => {

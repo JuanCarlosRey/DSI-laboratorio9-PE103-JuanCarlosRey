@@ -37,7 +37,7 @@ export class Subscriber implements Observer {
     update(magazine: Observable): void {
         if(magazine instanceof Magazine) {
             console.log(`I am a Subscriber called ${this.name}. ` +
-                        `My id is ${this.id}. ` + 
+                        `My id is ${this.id} ` + 
                         `and I received the new edition of the magazine ${magazine.getName()}. ` +
                         `The date of release is ${magazine.getLatestDate()}. ` + 
                         `The edition of the magazine is ${magazine.getEdition()}. ` +
