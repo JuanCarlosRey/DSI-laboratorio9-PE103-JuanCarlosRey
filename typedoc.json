@@ -1,6 +1,5 @@
 {
-    "entryPoints": [
-        "src/*"
-    ],
+    "entryPointStrategy": "expand",
+    "entryPoints": ["src"],
     "out": "./docs"
 }
