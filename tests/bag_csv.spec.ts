@@ -6,6 +6,6 @@ describe('Class CsvBagInstance', () => {
     const bagInstanceCsv = new CsvBagInstance();
 
     it('procesar()', () => {
-        //bagInstanceCsv.run();
+        bagInstanceCsv.run();
     });
 });
